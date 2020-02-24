@@ -1,0 +1,53 @@
+$backgroundColor: rgb(245, 222, 222);
+
+
+
+body {
+  background: $backgroundColor;
+  color: rgb(82, 4, 4);
+  padding: 1rem 4rem;
+  font-size: 20pt;
+  text-align: center ;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h4 {
+
+  margin-top: 200px;
+}
+
+#buttons {
+  margin: 2rem 0;
+}
+
+button {
+  background: rgb(2, 2, 88);
+  color: rgb(240, 240, 248);
+  font-size: 20pt;
+  border: 2px solid rgb(2, 2, 3);
+  border-radius: 4px;
+  padding: 0.7rem;
+  margin-right: 1rem;
+}
+
+button:hover {
+  background: rgb(0, 104, 17);
+  color: rgb(4, 4, 17);
+}
+
+button:active {
+  background: rgb(221, 0, 0);
+  color: rgb(4, 4, 19);
+}
+
+footer{
+
+margin-top: 190px;
+
+}
+
