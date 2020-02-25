@@ -1,54 +1,20 @@
-import React from "react";
+import React from 'react';
+
+import Header from './components/header/header.js';
+import Footer from './components/footer/footer.js';
+import Counter from './components/counter/counter.js';
 import './app.scss';
 
-const Header = () => {
-    return (
-      <header className="words-app">
-        <h1>My-first-counter-App-using-React</h1>
-      </header>
-    )
-  }
-  
-class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0,
-    };
-  }
-
-
-  incrementCounter = e => {
-    e.preventDefault();
-    this.setState(previousState => ({count: previousState.count + 1}));
-  };
-
-  decrementCounter = e => {
-    e.preventDefault();
-    this.setState(previousState => ({count: previousState.count - 1}));
-  };
-
+class App extends React.Component {
   render() {
     return (
-      <>
       <React.Fragment>
         <Header />
-        <h4>{this.state.count}</h4>
-        <div id="buttons">
-          <button onClick={this.incrementCounter}>Increment Counter by 1</button>
-          <button onClick={this.decrementCounter}>Decrement Counter by 1</button>
-        </div>
+        <Counter />
         <Footer />
       </React.Fragment>
-      </>
     );
   }
-  
 }
 
-const Footer = () => {
-    return (
-     <h2> <footer>&copy; obada-first-cool-react-app</footer></h2>
-    )
-  }
-export default Counter;
+export default App;
